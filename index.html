@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Title</title>
+  <meta charset="UTF-8"/>
+</head>
+<body>
+  <script>
+    var array = [];
+	function addNum()
+	{
+		var num = prompt("Enter a number", "");
+		array.push(num);
+	}
+	function pickNum()
+	{
+		document.write(array[Math.floor(Math.random() * array.length)]);
+	}
+  </script>
+</body>
+	<form>
+         <input type = "button" value = "Add number to array" onclick = "addNum();" />
+		 <input type = "button" value = "Pick random number" onclick = "pickNum();" />
+	</form>  
+</html>
